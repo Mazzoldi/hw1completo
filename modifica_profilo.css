@@ -1,0 +1,244 @@
+.avatar{
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+.avatar_interno{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+  
+body{
+    background-color: #fff;
+    margin: 0;
+    font-family: sans-serif;
+    color: #070A21;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: 0.2s;
+}
+  
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.errorj label{
+    color: #d01b2d;
+}
+
+.errorj img{
+    opacity: 1;
+}
+
+.errorj input, .errorj #upload{
+    border-color: #d01b2d;
+}
+
+.errorj span{
+    opacity: 1;
+    font-size: 14px;
+    color: #d01b2d;
+}
+
+#footer{
+    background-color: black;
+    padding: 50px 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+#footer p{
+    color: white;
+}
+
+form img{
+    opacity: 0;
+    width: 10px;
+    margin-right: 10px;
+}
+
+form span{
+    opacity: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    transition: opacity 0.3s ease;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+#icona_modifica{
+    height: 25px;
+    width: 25px;
+    z-index: 3;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#icona_modifica:hover{
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    border: 1px solid #d9dadc;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links a{
+    color: white;
+    margin: 15px 10px;
+    text-decoration: none;
+}
+
+#links a:visited{
+    text-decoration: none;
+    color: white;
+}
+  
+#links .button{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#logo{
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f8f8f8;
+}
+  
+#menu{
+    display: none;
+}
+  
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.name, .surname, .username, .email, .password, #fileupload{
+    width: 500px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav-container{
+    background-color: rgba(74, 194, 44, 0.9);
+    width: calc(100% - 40px);
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#separator{
+    display: inline-block;
+    height: 16px;
+    width: 1px;
+    background: currentColor;
+}
+
+.submit input{
+    margin-top: 8px;
+    border-radius: 50px;
+    padding: 16px 14px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgba(74, 194, 44, 0.9);
+    transition-property: background-color;
+    transition-duration: .3s;
+    border: 3px solid rgba(74, 194, 44, 0.9);
+}
+
+.submit input:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgba(74, 194, 44, 0.9);
+    border: 3px solid rgba(74, 194, 44, 0.9);
+}
+
+#upload_original:hover{
+    cursor: pointer;
+}
+  
+@media (max-width: 900px){
+    .container{
+      height: auto;
+      flex-direction: column;
+    }
+    footer nav{
+      margin: 0 30px;
+    }
+    #links{
+      display: none;
+    }
+    #menu{
+      display: block;
+    }
+}

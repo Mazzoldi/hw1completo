@@ -1,0 +1,251 @@
+a{
+    color: #f8f8f8;
+}
+
+.articolo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    max-height: 450px;
+    margin-bottom: 20px;
+    background-color: #bdcbbdde;
+  }
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: #f8f8f8;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: 0.2s;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+    background-color: black;
+    padding: 50px 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+h1{
+    z-index: 1;
+    font-size: 3em;
+    color: white;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    height: 98px;
+}
+
+header nav{
+    height: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+#links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links a{
+    color: white;
+    margin: 15px 10px;
+    text-decoration: none;
+}
+
+#links a#profilo{
+    margin: 0px 0px 0px 10px;
+}
+
+#links a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#links .button{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#logo{
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+#logo_profilo{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu{
+    display: none;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.nav-container{
+    background-color: rgba(74, 194, 44, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#query{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    width: 50%;
+    max-width: 600px;
+}
+
+#results{
+    min-height: calc(100vh - 361px);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+}
+
+#results a{
+    width: calc(100% - 20px);
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+    margin: 10px 0px;
+    color:rgba(0, 0, 0);
+    padding: 0 10px;
+}
+
+#results img{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: width 0.2s;
+}
+
+#results p{
+    width: calc(100% - 20px);
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+    color:rgba(0, 0, 0);
+    padding: 0 10px;
+}
+
+#results h1{
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    color: black;
+}
+
+.search{
+    text-align: center;
+    margin: 10px 0;
+}
+
+#search input[type=text]{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    width: calc(50% - 22px);
+    max-width: 578px;
+}
+
+#search input[type=submit]{
+    display: none;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+#separator{
+    display: inline-block;
+    height: 16px;
+    width: 1px;
+    background: currentColor;
+}
+
+@media (max-width: 900px){
+    .container{
+      height: auto;
+      flex-direction: column;
+    }
+    footer nav{
+      margin: 0 30px;
+    }
+    header h1{
+      font-size: 2em;
+      padding: 0 30px;
+    }
+    #links{
+      display: none;
+    }
+    #menu{
+      display: block;
+    }
+}
